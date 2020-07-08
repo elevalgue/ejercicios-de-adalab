@@ -1,0 +1,16 @@
+.container {
+  width: 1050px;
+  height: 300px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.item {
+  width: 200px;
+  height: 100;
+  box-sizing: border-box;
+  border: 1px solid purple;
+  background-color: blueviolet;
+}

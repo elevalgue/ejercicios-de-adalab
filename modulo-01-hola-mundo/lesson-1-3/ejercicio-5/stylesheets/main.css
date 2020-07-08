@@ -1,0 +1,8 @@
+.imagen {
+  width: 100px;
+  height: 100px;
+  padding: 10px solid red;
+  border: 5px solid blueviolet;
+  box-sizing: border-box;
+  margin: auto;
+}

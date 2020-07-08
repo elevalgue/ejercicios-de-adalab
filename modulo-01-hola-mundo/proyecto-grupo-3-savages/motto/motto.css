@@ -1,0 +1,21 @@
+.wrapper {
+  margin: auto;
+  width: 100%;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  position: relative;
+}
+.motto {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  width: 15.63rem;
+  height: 4.063rem;
+  margin: auto;
+  padding: 0.9375rem;
+  transform: translate(0, -50%);
+  font-weight: 600;
+  font-size: 1.25rem;
+  align-items: center;
+  font-style: italic;
+}

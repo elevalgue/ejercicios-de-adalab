@@ -1,0 +1,165 @@
+// TIPS SECTION
+
+.section-tips {
+  background-color: $color-light;
+  font-size: 18px;
+  font-family: $font-titles;
+  color: $color-dark;
+  margin: 30px 15px;
+
+  small {
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+    color: $color-light-text;
+    display: block;
+  }
+  p {
+    line-height: 25px;
+    font-size: 14px;
+    font-family: $font-main;
+    margin-top: 20px;
+  }
+
+  .section-title {
+    font-family: $font-titles;
+    text-transform: capitalize;
+  }
+  .p {
+    font-size: 20px;
+    line-height: 30px;
+    color: solid 4a4a4a;
+  }
+
+  // TIPS BUTTON
+
+  .tips-button {
+    color: $color-button;
+    border: 2px solid $color-button;
+    border-radius: 24px;
+    width: 76px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    text-align: center;
+    transition-duration: 0.3s;
+  }
+
+  // TRANSITION
+
+  .tips-button:hover {
+    width: 86px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 34px;
+    background-color: $color-button;
+    color: $color-light;
+    box-shadow: 0 4px 16px 0 $color-medium;
+  }
+}
+
+// REASONS SECTION
+
+.section-reasons {
+  display: grid;
+  grid-template-columns: repeat(1, 5fr);
+  background-color: $color-light-background;
+  font-size: 18px;
+  font-family: $font-titles;
+  color: $color-dark;
+  margin: 0;
+  padding: 0;
+
+  .article-reasons {
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+
+    h2,
+    h3 {
+      font-family: $font-titles;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+      margin: 45px 0px 0px 0px;
+      font-size: 18px;
+    }
+
+    p {
+      font-family: $font-main;
+      font-size: 18px;
+      line-height: 1.67;
+      margin: 10px 60px;
+    }
+
+    // REASONS BUTTON
+
+    .reasons-button {
+      color: $color-light;
+      background-color: $color-button;
+      border-radius: 24px;
+      width: 190px;
+      height: 45px;
+      line-height: 45px;
+      display: block;
+      text-align: center;
+      margin: 45px auto 45px auto;
+      transition-duration: 0.3s;
+    }
+
+    .reasons-button:hover {
+      width: 200px;
+      height: 55px;
+      line-height: 55px;
+      border-radius: 34px;
+      border: 2px solid $color-button;
+      background-color: $color-light;
+      color: $color-button;
+      box-shadow: 0 4px 16px 0 $color-button;
+      margin: 0 auto 0 auto;
+    }
+  }
+
+  // TABLET VIEW
+
+  @media all and (min-width: 768px) {
+    grid-template-columns: repeat(1, 3fr);
+    .tips {
+      width: 33vw;
+      float: left;
+    }
+
+    .content-reasons-button {
+      width: 100vw;
+      clear: left;
+      margin: 290px 0 60px 0;
+      display: block;
+      height: 60px;
+    }
+  }
+  // DESKTOP VIEW
+
+  @media all and (min-width: 1200px) {
+    grid-template-columns: repeat(1, 3fr);
+    .tips {
+      width: 33vw;
+      float: left;
+    }
+
+    .content-reasons-button {
+      width: 100vw;
+      clear: left;
+      margin: 190px 0 60px 0;
+      display: block;
+      height: 60px;
+    }
+  }
+}
