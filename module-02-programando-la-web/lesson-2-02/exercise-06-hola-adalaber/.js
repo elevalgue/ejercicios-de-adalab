@@ -1,4 +1,4 @@
 "use strict";
 
 const mateName = "María";
-console.log("Hola " + mateName, +"cómo ha ido el finde?");
+console.log("Hola " + mateName, + "cómo ha ido el finde?");
