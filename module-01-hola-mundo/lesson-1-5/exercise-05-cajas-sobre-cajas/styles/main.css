@@ -1,0 +1,41 @@
+body {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font-size: medium;
+  --main-font-family: Helvetica;
+  --main-font-color: white;
+}
+
+.div1 {
+  background-color: yellow;
+  color: var(--main-font-color);
+  font-size: var(--main-font-size);
+  width: 500px;
+  height: 500px;
+  padding: 40px;
+  border: 2px solid yellowgreen;
+}
+
+.div2 {
+  background-color: green;
+  color: var(--main-font-color);
+  font-size: var(--main-font-size);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 590px;
+  padding: 75px;
+}
+
+.div3 {
+  background-color: blue;
+  color: var(--main-font-color);
+  font-size: var(--main-font-size);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 740px;
+  border: 20px dotted blueviolet;
+}

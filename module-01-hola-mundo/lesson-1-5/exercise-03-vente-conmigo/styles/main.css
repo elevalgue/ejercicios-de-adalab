@@ -1,0 +1,17 @@
+.header {
+  color: white;
+  background-color: rgb(103, 6, 167);
+  height: 200px;
+  width: 100vw;
+  position: fixed;
+  z-index: 999;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main {
+  position: relative;
+  top: 200px;
+}

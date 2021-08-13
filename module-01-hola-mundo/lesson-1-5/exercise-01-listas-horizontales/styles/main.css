@@ -1,0 +1,16 @@
+.parent {
+  border: 1px solid rebeccapurple;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 15px;
+  border: 1px solid royalblue;
+}

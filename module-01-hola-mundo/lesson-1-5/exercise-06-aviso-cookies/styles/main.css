@@ -1,0 +1,15 @@
+body {
+  box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+}
+
+.last-div {
+  height: 100px;
+  background-color: yellow;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
