@@ -1,0 +1,19 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.wrapper {
+  min-height: vh;
+}
+
+.footer {
+  background-color: rebeccapurple;
+  color: white;
+}

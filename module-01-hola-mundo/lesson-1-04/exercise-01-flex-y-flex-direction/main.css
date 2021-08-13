@@ -1,0 +1,27 @@
+.container {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  /* Como estoy usando flex direction column, el eje principal es el vertical */
+  background-color: yellowgreen;
+}
+
+.item {
+  border: 1px solid blueviolet;
+  background-color: teal;
+}
+
+.container2 {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  /* Como estoy usando flex direction row, el eje principal es el horinzontal */
+  background-color: red;
+}
+
+.item2 {
+  border: 1px solid blue;
+  background-color: yellow;
+}

@@ -1,0 +1,42 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 960px;
+}
+
+.header {
+  background-color: red;
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.aside1 {
+  background-color: yellow;
+  text-align: center;
+}
+
+.article {
+  background-color: rgb(0, 68, 255);
+  text-align: center;
+  flex-grow: 2;
+}
+
+.aside2 {
+  background-color: rgb(255, 0, 221);
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.footer {
+  background-color: greenyellow;
+  text-align: center;
+}
