@@ -1,0 +1,26 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: mediumspringgreen;
+}
+
+.div1 {
+  display: block;
+  background-color: mediumturquoise;
+}
+
+.div2 {
+  display: inline;
+  background-color: mediumvioletred;
+}
+
+.div3 {
+  display: inline-block;
+  background-color: midnightblue;
+  color: white;
+}
+
+.div4 {
+  display: none;
+  background-color: violet;
+}
