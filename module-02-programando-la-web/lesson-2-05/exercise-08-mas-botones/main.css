@@ -1,0 +1,11 @@
+.btn {
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--selected {
+  background-color: fuchsia;
+  border: none;
+  cursor: pointer;
+}
