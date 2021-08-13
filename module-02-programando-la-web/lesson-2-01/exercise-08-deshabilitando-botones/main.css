@@ -1,0 +1,9 @@
+.button {
+  border: 5px dotted magenta;
+  background-color: blue;
+  color: white;
+}
+
+.button2 {
+  opacity: 0.2;
+}
