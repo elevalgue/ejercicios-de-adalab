@@ -8,8 +8,8 @@ function showMessage() {
   const bookFirst = document.querySelector('#bookFirst').value;
   const bookSecond = document.querySelector('#bookSecond').value;
   const bookList = [bookFirst, bookSecond];
-  console.log(bookList);
 
+  console.log(bookList);
   console.log('¡A mí también me encantaron ' + bookList + '. Tenemos mucho en común, humana. 🤖');
 }
 
