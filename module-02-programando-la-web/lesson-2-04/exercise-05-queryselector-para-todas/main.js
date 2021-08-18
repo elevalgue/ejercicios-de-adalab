@@ -2,7 +2,6 @@
 
 console.log('A picar código como locas');
 
-
 function getEl(selector) {
   const element = document.querySelector(selector);
   return element
