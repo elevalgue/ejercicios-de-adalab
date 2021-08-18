@@ -1,20 +1,18 @@
 'use strict';
 
-function geltEl(selector) {
+console.log('A picar código como locas');
+
+
+function getEl(selector) {
   const element = document.querySelector(selector);
-}
-//return element;
-console.log(element);
-
-//ejemplos
-
-function getParagraph(paragraph1) {
-  const Paragraph1 = document.querySelector(paragraph1);
+  return element
 }
 
-function getParagraph(paragraph2) {
-  const Paragraph1 = document.querySelector(paragraph2);
-}
-function getParagraph(paragraph3) {
-  const Paragraph1 = document.querySelector(paragraph3);
-}
+const titleEl = getEl('.title');
+const spanEl = getEl('.span1');
+const spanEl2 = getEl('.span5');
+
+console.log(titleEl);
+console.log(spanEl);
+console.log(spanEl2);
+
