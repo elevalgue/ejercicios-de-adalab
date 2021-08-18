@@ -1,14 +1,15 @@
-"use strict";
+'use strict'; 
 
-// function product(a, b) {
-//   return a * b;
-// }
-// const result = product(3 * 4);
-// console.log(`'La multiplicación da como resultado' ${result}`);
+console.log('Are you ready for a good time? :))');
 
-function multiplication(a, b) {
+function multiply(a, b) {
   return a * b;
 }
 
-// let result = multiplication(8, 10);
-// console.log(`El resultado de la multiplicación es ${result}`);
+const result = multiply(2, 3);
+
+console.log(`El resultado de la multiplicación es ${result}`);
+console.log(result = multiply(5, 4));
+console.log(result = multiply(3, 6));
+
+
