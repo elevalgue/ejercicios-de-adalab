@@ -1,0 +1,12 @@
+body {
+  margin: 1rem;
+}
+
+.btn {
+  border: none;
+}
+
+.danger {
+  background-color: red;
+  color: white;
+}
