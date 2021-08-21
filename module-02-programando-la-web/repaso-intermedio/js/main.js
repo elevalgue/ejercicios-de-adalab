@@ -37,7 +37,5 @@ function switchFace(ev) {
     faceEl.innerHTML = selectValue; 
 }
 
-
-
 // LISTENER
 buttonEl.addEventListener('click', handleClick); 
