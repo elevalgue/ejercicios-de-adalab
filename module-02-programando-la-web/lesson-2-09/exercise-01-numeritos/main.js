@@ -1,13 +1,14 @@
 'use strict';
 console.log('Are you ready for a good time? :))');
 
-let numbers = 0;
+let numbers = [];
 
-function get100Numbers() {
+function get100Numbers(arr) {
   for (let index = 0; index < 100; index++) {
-    numbers++
-    console.log(numbers, 'maricarmen');
+    arr.push(index++)
   }
 }
 
-get100Numbers(); 
+get100Numbers(numbers);
+console.log(numbers);
+
