@@ -11,7 +11,7 @@ function get100Numbers(arr) {
 }
 
 get100Numbers(numbers);
-console.log(numbers);
+console.dir(numbers);
 
 function getReversed100Numbers(arr) {
   get100Numbers();
