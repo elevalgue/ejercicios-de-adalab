@@ -19,7 +19,6 @@ function bestLostNumbers(arr) {
 bestLostNumbers(); 
 console.log(evenLostNumbers, 'maricarmen');
 
-
 function best3Numbers(arr) {
     for (let index = 0; index < lostNumbers.length; index++) {
         if (lostNumbers[index] % 3 === 0) {
