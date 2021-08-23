@@ -8,4 +8,4 @@ Ejercicios de __HTML y CSS.__
 Ejercicios de __JavaScript.__
 Ejercicios de __React.__
 
-Made with 🌟  by @elevalgue
+Made with ⭐  by @elevalgue
