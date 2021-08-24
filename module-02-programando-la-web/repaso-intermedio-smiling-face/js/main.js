@@ -18,8 +18,8 @@ function handleClick(ev) {
 
 function switchBackground() {
     console.log(getRandomNumber());
-    bodyEl.classList.remove('sad-face');
     bodyEl.classList.remove('happy-face');
+    bodyEl.classList.remove('sad-face');
 
     if (getRandomNumber() % 2 === 0) {
         bodyEl.classList.add('happy-face');
