@@ -1,0 +1,14 @@
+body {
+  margin: 1rem;
+}
+
+.message {
+  border: 2px dotted darkmagenta;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkmagenta;
+}
+
+.hidden {
+  display: none;
+}
