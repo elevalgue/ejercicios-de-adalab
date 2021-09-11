@@ -1,3 +1,5 @@
+'use strict; 
+
 function getDogImage() {
   fetch("https://dog.ceo/api/breed/chihuahua/images/random")
     .then(response => response.json())
