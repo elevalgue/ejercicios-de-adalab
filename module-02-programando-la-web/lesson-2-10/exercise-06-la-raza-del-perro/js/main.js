@@ -1,3 +1,5 @@
+'use strict'; 
+
 function getRandomDog() {
   // 1. Pedir listado de razas de perros a la API de los perros
   fetch('https://dog.ceo/api/breeds/list/all')
