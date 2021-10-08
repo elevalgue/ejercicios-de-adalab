@@ -1,0 +1,52 @@
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.container {
+  background-color: khaki;
+  margin: 0 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media all and (min-width: 768px) {
+  h1 {
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  .container {
+    background-color: indianred;
+    margin: 30px 40px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media all and (min-width: 1140px) {
+  h1 {
+    font-weight: bold;
+    font-size: 42px;
+  }
+
+  .container {
+    background-color: blue;
+    margin: 190px auto;
+    max-width: 750px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
