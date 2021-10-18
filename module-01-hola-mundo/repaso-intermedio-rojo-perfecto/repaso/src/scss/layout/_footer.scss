@@ -1,11 +1,9 @@
-// .page__footer {
-//   position: fixed;
-//   left: 0;
-//   bottom: 0;
-//   width: 100vw;
-//   padding: 1rem;
-//   color: $color-secondary;
-// }
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
 
 .footer {
   position: fixed;
@@ -13,12 +11,12 @@
   width: 100%;
   text-align: center;
   font-weight: 300;
-  border-top: 1px solid var(--primary-color);
+  border-top: 1px solid $primary-color;
 }
 
 .footer-letter {
-  background-color: var(--primary-color);
-  color: var(--light-color);
+  background-color: $primary-color;
+  color: $light-color;
   border-radius: 50%;
   height: 50px;
   width: 50px;
