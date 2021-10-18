@@ -1,13 +1,13 @@
-:root {
-  --primary-font: 'Montserrat', sans-serif;
-  --primary-color: #cc212a;
-  --light-color: white;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   font-family: var(--primary-font);
+}
+
+:root {
+  --primary-font: 'Montserrat', sans-serif;
+  --primary-color: #cc212a;
+  --light-color: white;
 }
 
 .main {
