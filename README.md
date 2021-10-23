@@ -7,6 +7,5 @@ En este repositorio están subidas las respuestas a los ejercicios de repaso hec
 - Ejercicios de __HTML y CSS.__ 
 - Ejercicios de __JavaScript.__
 - Ejercicios de __React.__
-- Ejercicios de __Backed.__ 👉 Still working on it 
 
 Made with ⭐  by @elevalgue
