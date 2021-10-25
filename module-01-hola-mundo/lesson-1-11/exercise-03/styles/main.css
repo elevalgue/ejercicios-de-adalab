@@ -18,12 +18,15 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   background-color: #ffc0cb;
   grid-column: 1 / 5;
-  /* text-align: center; */
-  /* align-self: center;
-  justify-self: center; */
 }
 
 .menu {
