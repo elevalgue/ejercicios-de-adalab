@@ -1,4 +1,4 @@
-# ejercicios-de-adalab
+# Adalab Exercises
 These have been the exercises I've been working in during the web development bootcamp that I've studied in Adalab. 🐶  💻
 
 Ejercicios prácticos del temario de __Adalab__
