@@ -11,15 +11,18 @@
   grid-template-areas: 'header header' 'main aside' 'footer footer';
   gap: 5px;
 }
+
 .item {
   background: #89ece1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .item--header {
   grid-area: header;
 }
+
 .item--main {
   grid-area: main, aside;
 }

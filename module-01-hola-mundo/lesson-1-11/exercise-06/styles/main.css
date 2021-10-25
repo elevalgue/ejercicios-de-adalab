@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #faf5d1;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100vh;
+}
+
+.header {
+  background-color: #ffc0cb;
+  height: 25vh;
+}
+
+.menu {
+  background-color: #4b0082;
+  height: 50vh;
+}
+
+.content {
+  background-color: #cd5b5b;
+  height: 50vh;
+}
+
+.footer {
+  background-color: #acd8e5;
+  height: 25vh;
+}
