@@ -1,4 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
 .header {
   background-color: darkcyan;
   color: white;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
