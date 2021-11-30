@@ -1,3 +1,40 @@
-.title {
-  color: cadetblue;
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffcc00;
+}
+
+.face {
+  font-size: 50px;
+}
+
+.form {
+  text-align: center;
+}
+
+.select {
+  padding: 3px 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  background-color: RGB(0, 151, 239);
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+
+.happy-face {
+  background-color: #ffcc00;
+}
+
+.sad-face {
+  background-color: #ff9900;
 }
