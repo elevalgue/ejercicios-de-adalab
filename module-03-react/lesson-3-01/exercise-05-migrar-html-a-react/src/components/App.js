@@ -3,6 +3,7 @@ import '../styles/App.scss';
 function App() {
   return (
     <div className="App">
+      {/* Comentario de prueba */}
       <main className="main">
       <div className="main-title">
         <span>#CC212A</span>
