@@ -1,0 +1,45 @@
+$color-yellow: #ffcc00;
+$color-orange: #ff9900;
+$color-button: RGB(0, 151, 239);
+$color-light: white;
+
+div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-yellow;
+}
+
+.face {
+  font-size: 50px;
+}
+
+.form {
+  text-align: center;
+}
+
+.select {
+  padding: 3px 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  background-color: $color-button;
+  color: $color-light;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+
+.happy-face {
+  background-color: $color-yellow;
+}
+
+.sad-face {
+  background-color: $color-orange;
+}
