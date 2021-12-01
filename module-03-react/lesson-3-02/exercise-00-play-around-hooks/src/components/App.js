@@ -2,18 +2,19 @@ import '../styles/App.scss';
 import { useState } from 'react'; 
 
 const App = () => {
-  const [name, setName] = useState('Maricamen'); 
-  const handleInput = (e) => {
-    console.log(`El nombre de la usuaria es: ${name}, ${e.key}`);
-    setName(''); 
+  const [email, setEmail] = useState('');
+  const handleEmail = e => {
+    const inputValue = e.target.value;
+    console.log(`El email de la usuaria es: ${email}, ${e.target.value}`);
+    setEmail(inputValue); 
   }
 
   return (
   <div className="App">
       <h1 className="title">Hola mundo</h1>
       <form>
-        <label>Nombre</label>
-        <input type="text" name="input" id="" onKeyUp={handleInput}></input>
+        <label>Email</label>
+        <input type="text" name="email" id="email" onKeyUp={handleEmail}></input>
       </form>
     </div>
   );
