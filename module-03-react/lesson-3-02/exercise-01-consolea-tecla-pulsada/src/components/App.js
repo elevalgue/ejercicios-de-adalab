@@ -2,7 +2,7 @@ import '../styles/App.scss';
 
 const App = () => {
   const handleInput = (e) => {
-    console.log(e.target.value, 'tecleo');
+    console.log('tecleo la letra...' ,e.key);
   }
 
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <h1 className="title">Hola mundo</h1>
       <form>
         <label>Esto es un input</label>
-        <input onKeyUp={handleInput} type="text"></input>
+        <input type="text" name="input" id="" onKeyUp={handleInput}></input>
       </form>
     </div>
   );
