@@ -1,8 +1,11 @@
 import '../styles/App.scss';
+import { useState } from 'react'; 
 
 const App = () => {
+  const [name, setName] = useState('Maricamen'); 
   const handleInput = (e) => {
-    console.log('tecleo la letra...' ,e.key);
+    console.log(`El nombre de la usuaria es: ${name}, ${e.key}`);
+    setName(''); 
   }
 
   return (
