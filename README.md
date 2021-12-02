@@ -6,7 +6,7 @@ En este repositorio están subidas las respuestas a los ejercicios de repaso hec
 
 - Ejercicios de __HTML y CSS.__ 
 - Ejercicios de __JavaScript.__
-- Ejercicios de __React.__ 👉 Still working on it 
+- Ejercicios de __React.__ 👉 Still working on it :construction:
 
 ##
 
