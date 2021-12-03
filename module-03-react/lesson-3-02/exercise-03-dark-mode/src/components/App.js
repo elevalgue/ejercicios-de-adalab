@@ -13,7 +13,6 @@ function App() {
       setchangeClass('');
       setchangeText('Tienes activado el light mode');
     }
-    // setchangeClass(!changeClass)
   }
 
   return (
