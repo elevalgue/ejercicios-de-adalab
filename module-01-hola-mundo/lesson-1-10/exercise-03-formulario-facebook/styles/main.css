@@ -2,9 +2,9 @@
   margin: 1rem;
 }
 
-label {
-  margin-top: 1rem;
-}
+/* label {
+  display: none;
+} */
 
 input {
   display: block;
