@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script
+      src="https://kit.fontawesome.com/16579ed8b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Exercise 05:</title>
+  </head>
+  <body>
+    <form action="/signup" method="post">
+      <fieldset>
+        <label for="firstName">Nombre</label>
+        <input
+          type="text"
+          placeholder="Nombre"
+          id="firstName"
+          name="firstName"
+          required
+        />
+        <label for="surname">Apellidos</label>
+        <input
+          type="text"
+          placeholder="apellidos"
+          id="surname"
+          name="surname"
+          required
+        />
+        <label for="email">Nombre de usuario</label>
+        <input
+          type="email"
+          placeholder="@gmail.com"
+          id="email"
+          name="email"
+          required
+        />
+      </fieldset>
+      <fieldset>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required />
+        <label for="password">Confirma tu contraseña</label>
+        <input type="password" id="password" name="password" required />
+      </fieldset>
+      <fieldset>
+        <div class="birthday">
+          <label for="birthday">Fecha de nacimiento</label>
+          <input
+            type="number"
+            id="birthday"
+            name=""
+            placeholder="Día"
+            required
+          />
+          <select name="" id="">
+            <option value="">Mes</option>
+            <option value="">Enero</option>
+            <option value="">Feb</option>
+            <option value="">Mar</option>
+            <option value="">Abr</option>
+            <option value="">May</option>
+            <option value="">Jun</option>
+            <option value="">Jul</option>
+            <option value="">Ago</option>
+            <option value="">Sep</option>
+            <option value="">Oct</option>
+            <option value="">Nov</option>
+            <option value="">Dic</option>
+          </select>
+          <input
+            type="number"
+            id="birthday"
+            name=""
+            placeholder="Año"
+            required
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="gender">Sexo</label>
+        <select name="gender" id="gender" placeholder="Selecciona tu género">
+          <option value="Mujer">Mujer</option>
+          <option value="Hombre">Hombre</option>
+          <option value="No binario">No binario</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="phone">Teléfono móvil</label>
+        <select
+          name="phone"
+          id="phone"
+          placeholder="+34"
+          pattern="[0-9]{9}"
+          required
+        >
+          <option value="AF">Afghanistan</option>
+        </select>
+      </fieldset>
+      <label for="email">Tu direacctión de correo electrónico actual</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        pattern="/^[a-zA-Z0-9.!/=?^_`{|}~-]+@[a-zA-Z]+(?:\.[a-zA-Z]+)*$/"
+        required
+      />
+      <label for="location">Ubicación</label>
+      <input
+        type="text"
+        id="location"
+        name="location"
+        placeholder="España"
+        required
+      />
+      <input type="submit" value="Siguiente paso" />
+    </form>
+  </body>
+</html>

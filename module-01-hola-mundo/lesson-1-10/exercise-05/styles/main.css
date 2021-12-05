@@ -1,0 +1,15 @@
+input {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+fieldset {
+  border: none;
+}
+
+.birthday {
+  display: flex;
+  flex-direction: row;
+}
