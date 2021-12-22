@@ -1,0 +1,33 @@
+:root {
+  --link-color: khaki;
+}
+
+.container {
+  width: 125px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: indianred;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.button {
+  color: var(--link-color);
+}
+
+.button:hover {
+  transition: color ease 0.5;
+  color: indianred;
+}
+
+.container:hover {
+  background-color: khaki;
+  color: indianred;
+  transition: color ease 0.5s;
+  cursor: pointer;
+  outline: none;
+}
