@@ -2,10 +2,6 @@
   --link-color: black;
 }
 
-body {
-  height: 100%;
-}
-
 .container {
   width: 140px;
   height: 45px;
