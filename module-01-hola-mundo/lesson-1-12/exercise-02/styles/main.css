@@ -27,7 +27,8 @@ body {
 
 .box:hover {
   background: white;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  transition: color ease 0.5s;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4) 1s;
 }
 
 .box__label {
