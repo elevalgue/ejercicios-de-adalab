@@ -1,5 +1,9 @@
 :root {
-  --link-color: khaki;
+  --link-color: black;
+}
+
+body {
+  height: 100%;
 }
 
 .container {
@@ -9,8 +13,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: indianred;
-  color: white;
+  background-color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 45px;
 }
@@ -19,17 +23,23 @@
   color: var(--link-color);
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
+
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 
 .button:hover {
   transition: color ease 0.5;
-  color: indianred;
+  color: white;
 }
 
 .container:hover {
-  background-color: khaki;
-  color: indianred;
   transition: color ease 0.5s;
   cursor: pointer;
   outline: none;
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
