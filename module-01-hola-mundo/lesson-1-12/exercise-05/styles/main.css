@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: RGB(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.form__button {
+  background-color: RGB(0, 149, 136);
+}
