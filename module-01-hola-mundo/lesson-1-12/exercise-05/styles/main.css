@@ -14,6 +14,20 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem;
+}
+
+.form__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: RGB(0, 149, 136);
+  font-size: 25px;
+}
+
+.form__title-sub {
+  color: rgba(20, 19, 19, 0.671);
 }
 
 .form__container {
