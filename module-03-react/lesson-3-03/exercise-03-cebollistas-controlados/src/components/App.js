@@ -36,13 +36,24 @@ function App() {
     ev.preventDefault();
   };
 
-  const handleToggleCheck = () => {
+  const handleCheck = () => {
+    setPatatas(true)
     setPatatas(true);
     setCebolla(true);
     setMacarrones(true);
     setNueces(true);
     setCerveza(true);
     setPatatas(true);
+  };
+
+  const handleUncheck = () => {
+    setPatatas(false)
+    setPatatas(false);
+    setCebolla(false);
+    setMacarrones(false);
+    setNueces(false);
+    setCerveza(false);
+    setPatatas(false);
   };
 
   return (
@@ -110,10 +121,10 @@ function App() {
           Cerveza
         </label>
 				<p>{renderMessage()}</p>
-				<button className="button" onClick={handleToggleCheck}>
+				<button className="button" onClick={handleCheck}>
 					Marcar todos
 				</button>
-				<button className="button" onClick={handleToggleCheck}>
+				<button className="button" onClick={handleUncheck}>
 					Desmarcar todos
 				</button>
 			</form>
