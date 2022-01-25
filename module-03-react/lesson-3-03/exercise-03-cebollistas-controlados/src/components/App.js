@@ -37,23 +37,21 @@ function App() {
   };
 
   const handleCheck = () => {
-    setPatatas(true)
-    setPatatas(true);
-    setCebolla(true);
     setMacarrones(true);
+    setPatatas(true)
     setNueces(true);
+    setHuevos(true);
+    setCebolla(true);
     setCerveza(true);
-    setPatatas(true);
   };
 
   const handleUncheck = () => {
-    setPatatas(false)
-    setPatatas(false);
-    setCebolla(false);
     setMacarrones(false);
+    setPatatas(false)
     setNueces(false);
+    setHuevos(false);
+    setCebolla(false);
     setCerveza(false);
-    setPatatas(false);
   };
 
   return (
@@ -93,9 +91,9 @@ function App() {
         <label htmlFor='tortilla'>
           <input
             type='checkbox'
-            name='huevos'
-            id='huevos'
-            checked={huevos}
+            name='cebolla'
+            id='cebolla'
+            checked={cebolla}
             onChange={handleIngredient}
           />
           Huevos
@@ -103,9 +101,9 @@ function App() {
         <label htmlFor='tortilla'>
           <input
             type='checkbox'
-            name='cebolla'
-            id='cebolla'
-            checked={cebolla}
+            name='huevos'
+            id='huevos'
+            checked={huevos}
             onChange={handleIngredient}
           />
           Cebolla
