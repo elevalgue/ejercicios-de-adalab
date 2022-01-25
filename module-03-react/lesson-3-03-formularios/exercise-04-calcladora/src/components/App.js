@@ -28,6 +28,12 @@ const App = () => {
           Escribe otro número:
           <input type="number" name="email" onChange={handleNumberB} />
         </label>
+          <select>
+            <option value="sumar">sumar</option>
+            <option value="restar">restar</option>
+            <option value="multiplicar">multiplicar</option>
+            <option value="dividir">dividir</option>
+          </select>
       </form>
       <p>
         La suma de <strong>{numberA}</strong> y <strong>{numberB}</strong> es
