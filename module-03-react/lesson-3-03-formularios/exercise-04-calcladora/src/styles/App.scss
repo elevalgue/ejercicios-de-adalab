@@ -1,3 +1,13 @@
+* {
+  margin: 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .title {
   color: cadetblue;
 }
