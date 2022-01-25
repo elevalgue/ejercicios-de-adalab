@@ -5,30 +5,58 @@ function App() {
   const [patatas, setPatatas] = useState('');
   const [cebolla, setCebolla] = useState('');
   const [huevos, setHuevos] = useState('');
-
+  const [macarrones, setMacarrones] = useState(''); 
+  const [nueces, setNueces] = useState('');
+  const [cerveza, setCerveza] = useState('');
+    
   const handleIngredient = (ev) => {
     if (ev.target.id === 'patatas') {
-      setPatatas(ev.target.checked);
+      setPatatas (ev.target.checked);
     } else if (ev.target.id === 'cebolla') {
-      setCebolla(ev.target.checked);
-    } else {
-      setHuevos(ev.target.checked);
+      setCebolla (ev.target.checked);
+    } else if (ev.target.id === 'huevos') {
+      setHuevos (ev.target.checked);
+    } else if (ev.target.id === 'macarrones') {
+      setMacarrones (ev.target.checked);
+    } else if (ev.target.id === 'nueces') {
+      setNueces(ev.target.checked);
+    } else if (ev.target.id === 'cerveza')
+      setCerveza(ev.target.checked);
     }
-  };
 
   const renderMessage = () => {
-    if (patatas && cebolla && huevos) {
-      return 'Eres una persona concebollista';
-    } else {
-      return 'Eres un robot sin paladar';
-    }
+      if (!(patatas && cebolla && huevos)) {
+        return 'Eres un robot sin paladar';
+        } else {
+        return 'Eres una persona concebollista';
+      }
+    };
+
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
   };
+
+  const handleToggleCheck = () => {
+    setPatatas(true);
+    setCebolla(true);
+    setMacarrones(true);
+    setNueces(true);
+    setCerveza(true);
+    setPatatas(true);
+  };
+
   return (
     <div>
       <h1>Selecciona los ingredientes de la tortilla de patatas</h1>
-      <form action=''>
+      <form  onSubmit={handleSubmit} action=''>
         <label htmlFor=''>
-          <input type='checkbox' name='macarrones' id='1' />
+          <input
+            type='checkbox'
+            name='macarrones'
+            id='macarrones'
+            checked={macarrones}
+            onChange={handleIngredient}
+          />
           Macarrones
         </label>
         <label htmlFor='tortilla'>
@@ -36,12 +64,19 @@ function App() {
             type='checkbox'
             name='patatas'
             id='patatas'
+            checked={patatas}
             onChange={handleIngredient}
           />
           Patatas
         </label>
         <label htmlFor=''>
-          <input type='checkbox' name='nueces' id='3' />
+          <input
+            type='checkbox'
+            name='nueces'
+            id='nueces'
+            checked={nueces}
+            onChange={handleIngredient}
+            />
           Nueces
         </label>
         <label htmlFor='tortilla'>
@@ -49,6 +84,7 @@ function App() {
             type='checkbox'
             name='huevos'
             id='huevos'
+            checked={huevos}
             onChange={handleIngredient}
           />
           Huevos
@@ -58,20 +94,31 @@ function App() {
             type='checkbox'
             name='cebolla'
             id='cebolla'
+            checked={cebolla}
             onChange={handleIngredient}
           />
           Cebolla
         </label>
         <label htmlFor=''>
-          <input type='checkbox' name='cerveza' id='6' />
+          <input
+            type='checkbox'
+            name='cerveza'
+            id='cerveza'
+            checked={cerveza}
+            onChange={handleIngredient}
+            />
           Cerveza
         </label>
-      </form>
-      <p>{renderMessage()}</p>
-      <button>Marcar todos</button>
-      <button>Desmarcar todos</button>
-    </div>
-  );
+				<p>{renderMessage()}</p>
+				<button className="button" onClick={handleToggleCheck}>
+					Marcar todos
+				</button>
+				<button className="button" onClick={handleToggleCheck}>
+					Desmarcar todos
+				</button>
+			</form>
+		</div>
+	);
 }
 
 export default App;
