@@ -1,6 +1,5 @@
 import '../styles/App.scss';
 
-
 const App = () => {
   const adalabers = [
     {
