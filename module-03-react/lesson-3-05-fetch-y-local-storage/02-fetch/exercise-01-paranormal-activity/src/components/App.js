@@ -6,57 +6,51 @@ import callToApi from '../services/api';
 const App = () => {
   // Estados
 
-  // Creamos characters para guardar los personajes respondidos por el API, por eso es un array vacío
-  const [characters, setCharacters] = useState([]);
+  const [shows, setShows] = useState([]);
   // Creamos searchName para gestionar el input de búsqueda, por eso es un string vacío
-  const [searchName, setSearchName] = useState('');
+  const [searchShow, setSearchShow] = useState('');
 
   // useEffect
 
   useEffect(() => {
     // Aquí podemos poner código JS, por ejemplo podríamos llamar a callToApi dentro de un if
 
-    // Llamamos al API pasando por parámetros el searchName
-    callToApi(searchName).then(response => {
+    // Llamamos al API pasando por parámetros el searchShow
+    callToApi(searchShow).then(response => {
       // Cuando el API responde guardamos los personajes en el estado
-      setCharacters(response);
+      setShows(response);
     });
-    // Este useEffect depende de searchName por eso ponemos [searchName]
-    // Cuando la usuaria cambia el searchName este useEffect se vuelve a ejecutar porque necesitamos llamar otra vez al API para obtener nuevos datos
-  }, [searchName]);
+    // Este useEffect depende de searchShow por eso ponemos [searchShow]
+    // Cuando la usuaria cambia el searchShow este useEffect se vuelve a ejecutar porque necesitamos llamar otra vez al API para obtener nuevos datos
+  }, [searchShow]);
 
   // Eventos
 
-  const handleSearchName = ev => {
+  const handleSearchShow = ev => {
     // Cuando la usuaria cambia el input guardamos su valor en el estado
-    setSearchName(ev.target.value);
+    setSearchShow(ev.target.value);
   };
 
   // Renderizado
 
-  const renderCharacters = () => {
+  const renderShows = () => {
     // Pintamos el listado de personajes respondido por el API
-    return characters.map(
-      (character, index) => {
+    return shows.map(
+      (show, id) => {
       // El API no nos devuelve un id para cada personaje, por eso usamos el index que nos da el map
-        return <li key={index}>
+        return <li key={id}>
           <span>
-            Nombre: {character.name}
+            Serie:  {show.name}
           </span>
           <br />
           
           <span>
-            Fecha de nacimiento: {character.gender}
+            Idioma:  {show.language}
           </span>
           <br />
 
           <span>
-            Color de ojos: {character.eyeColor}
-          </span>
-          <br />
-
-          <span>
-            Color de ojos: {character.birth}
+            Estatus:  {show.status}
           </span>
           <br />
         </li>;
@@ -66,15 +60,15 @@ const App = () => {
 
   return (
     <div>
-      <h1>Llamar al API de Star Wars:</h1>
+      <h1>Llamar al API de TvMaze:</h1>
 
       <form>
-        <label htmlFor="name">Busca por el nombre de tu personaje favorito:</label>
-        <input type="text" name="name" id="name" value={searchName} onChange={handleSearchName} />
+        <label htmlFor="name">Busca por el nombre de tu serie favorita: </label>
+        <input type="text" name="name" id="name" value={searchShow} onChange={handleSearchShow} />
       </form>
 
-      <h2>Personajes con el nombre: {searchName}</h2>
-      <ul>{renderCharacters()}</ul>
+      <h2>Shows con la palabra {searchShow}</h2>
+      <ul>{renderShows()}</ul>
     </div>
   );
 };
