@@ -18,6 +18,7 @@ const App = () => {
 
   const renderAdalabers = () => {
     return adalabers.map((adalaber) => {
+      console.log(adalaber.id)
       return (
         <li key={adalaber.id}>
           {/* Aquí podemos poner todas las etiquetas que queramos */}
