@@ -39,6 +39,10 @@ const App = () => {
     setLegalTerms(false);
   };
 
+  const handleForm = () => {
+		console.log('Enviando datos al servidor...');
+	};
+
   const isValidForm = () => {
     if (name !== '' && email !== '' && paymentType !== '' && legalTerms === true) {
       return true;
@@ -50,13 +54,13 @@ const App = () => {
   return (
     <div>
       <Form
-          // handleForm={handleForm}
+          handleForm={handleForm}
           handleName={handleName}
           handleEmail={handleEmail}
           handleRegion={handleRegion}
           handlePaymentType={handlePaymentType}
           handleResetButton={handleResetButton}
-          // handleFormSubmit={handleForm}
+          handleFormSubmit={handleForm}
           name={name}
           email={email}
           region={region}

@@ -1,5 +1,9 @@
-import Preview from './Preview'
-import Button from './Button'
+import Preview from './Preview'; 
+import Button from './Button'; 
+import InputGroupText from './InputGroupText';
+import InputGroupSelect from './InputGroupSelect';
+import InputGroupRadio from './InputGroupRadio';
+import InputGroupCheck from './InputGroupCheck';
 
 const Form = props => {
   const handleForm = ev => {
@@ -9,124 +13,77 @@ const Form = props => {
   };
 
   return (
-  <form className="form" onSubmit={handleForm}>
+<form className="form" onSubmit={handleForm}>
 			<h2>Rellena tus datos para finalizar la compra:</h2>
 			<div className="form">
+				{/* name */}
 
-          {/* name */}
-          <div className="input-group-text">
-            <label className="label-text" htmlFor="name">
-              Escribe un nombre:
-            </label>
-            <input
-              className="input-text"
-              type="text"
-              name="name"
-              id="name"
-              placeholder="María García"
-              value={props.name}
-              onChange={props.handleName}
-            />
-          </div>
+				<InputGroupText
+					labelText="Escribe un nombre"
+					inputName="name"
+					inputId="name"
+					inputPlaceholder="María García"
+					inputValue={props.name}
+					handleChange={props.handleName}
+				/>
 
           {/* email */}
-          <div className="input-group-text">
-            <label className="label-text" htmlFor="email">
-              Escribe un email:
-            </label>
-            <input
-              className="input-text"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="mariagarcia@gmail.com"
-              value={props.email}
-              onChange={props.handleEmail}
-            />
-          </div>
+      <InputGroupText
+					labelText="Escribe un email"
+					inputName="email"
+					inputId="email"
+					inputPlaceholder="mariagarcia@gmail.com"
+					inputValue={props.email}
+					handleChange={props.handleEmail}
+				/>
 
           {/* region */}
-          <div className="input-group-select">
-            <label className="label-text" htmlFor="region">
-              Indica tu región:
-            </label>
-            <select
-              className="input-select"
-              name="region"
-              id="region"
-              value={props.region}
-              onChange={props.handleRegion}
-            >
-              <option>España peninsular</option>
-              <option>Islas Canarias</option>
-              <option>Islas Baleares</option>
-              <option>Ceuta</option>
-              <option>Melilla</option>
-            </select>
-          </div>
+      
+				<InputGroupSelect
+					labelText="Indica tu región"
+					inputName="region"
+					inputId="region"
+					inputValue={props.region}
+					handleChange={props.handleRegion}
+				/>
+      <label className="label-text">Indica tu método de pago:</label>
 
-          {/* payment type */}
-          <label className="label-text">Indica tu método de pago:</label>
+				<InputGroupRadio
+					labelText="Tarjeta de crédito"
+					inputId="creditCard"
+					inputValue="creditCard"
+					name="paymentType"
+					handleChange={props.handlePaymentType}
+					checked={props.paymentType === 'creditCard'}
+				/>
 
-          <div className="input-group-radio">
-            <label className="label-radio" htmlFor="creditCard">
-              Tarjeta de crédito
-            </label>
-            {/* Este radio solo debe aparecer activo cuando paymentType sea creditCard */}
-            <input
-              type="radio"
-              name="paymentType"
-              id="creditCard"
-              value="creditCard"
-              checked={props.paymentType === 'creditCard'}
-              onChange={props.handlePaymentType}
-            />
-          </div>
+      <InputGroupRadio
+					labelText="Efectivo"
+					inputId="cash"
+					inputValue="cash"
+					name="paymentType"
+					handleChange={props.handlePaymentType}
+					checked={props.paymentType === 'cash'}
+				/>
 
-          <div className="input-group-radio">
-            <label className="label-radio" htmlFor="cash">
-              Efectivo
-            </label>
-            {/* Este radio solo debe aparecer activo cuando paymentType sea cash */}
-            <input
-              type="radio"
-              name="paymentType"
-              id="cash"
-              value="cash"
-              checked={props.paymentType === 'cash'}
-              onChange={props.handlePaymentType}
-            />
-          </div>
-
-          <div className="input-group-radio">
-            <label className="label-radio" htmlFor="cashOnDelivery">
-              Contra reembolso
-            </label>
             {/* Este radio solo debe aparecer activo cuando paymentType sea cashOnDelivery */}
-            <input
-              type="radio"
-              name="paymentType"
-              id="cashOnDelivery"
-              value="cashOnDelivery"
-              checked={props.paymentType === 'cashOnDelivery'}
-              onChange={props.handlePaymentType}
-            />
-          </div>
+        <InputGroupRadio
+					labelText="Contra reembolso"
+					inputId="cashOnDelivery"
+					inputValue="cashOnDelivery"
+					name="paymentType"
+					handleChange={props.handlePaymentType}
+					checked={props.paymentType === 'cashOnDelivery'}
+				/>
 
           {/* legal terms */}
-          <div className="input-group-checkbox">
-            <label className="label-check" htmlFor="legalTerms">
-              Debes aceptar nuestros términos legales para completar la compra:
-            </label>
-            {/* Este radio solo debe aparecer activo cuando legalTerms sea true */}
-            <input
-              type="checkbox"
-              name="legalTerms"
-              id="legalTerms"
-              checked={props.legalTerms}
-              onChange={props.handleLegalTerms}
-          />
-        </div>
+      < InputGroupCheck
+					labelText="Debes aceptar nuestros términos legales para completar la compra:"
+					checkName="legalTerms"
+					checkChecked={props.checkedRadio}
+					handleChange={props.handleLegal}
+				/>
+			</div>
 
         <Preview
             name={props.name}
