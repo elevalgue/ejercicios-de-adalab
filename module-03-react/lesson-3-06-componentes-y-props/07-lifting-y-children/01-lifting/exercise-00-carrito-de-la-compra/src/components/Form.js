@@ -4,10 +4,10 @@ const Form = props => {
     console.log('Enviando datos al servidor...');
   };
 
-  return
-     <form className="form" onSubmit={handleForm}>
-        <h2>Rellena tus datos para finalizar la compra:</h2>
-        <div className="form">
+  return (
+  <form className="form" onSubmit={handleForm}>
+			<h2>Rellena tus datos para finalizar la compra:</h2>
+			<div className="form">
 
           {/* name */}
           <div className="input-group-text">
@@ -20,8 +20,8 @@ const Form = props => {
               name="name"
               id="name"
               placeholder="María García"
-              value={name}
-              onChange={handleName}
+              value={props.props.name}
+              onChange={props.handleName}
             />
           </div>
 
@@ -36,8 +36,8 @@ const Form = props => {
               name="email"
               id="email"
               placeholder="mariagarcia@gmail.com"
-              value={email}
-              onChange={handleEmail}
+              value={props.email}
+              onChange={props.handleEmail}
             />
           </div>
 
@@ -50,8 +50,8 @@ const Form = props => {
               className="input-select"
               name="region"
               id="region"
-              value={region}
-              onChange={handleRegion}
+              value={props.region}
+              onChange={props.handleRegion}
             >
               <option>España peninsular</option>
               <option>Islas Canarias</option>
@@ -74,8 +74,8 @@ const Form = props => {
               name="paymentType"
               id="creditCard"
               value="creditCard"
-              checked={paymentType === 'creditCard'}
-              onChange={handlePaymentType}
+              checked={props.paymentType === 'creditCard'}
+              onChange={props.handlePaymentType}
             />
           </div>
 
@@ -89,8 +89,8 @@ const Form = props => {
               name="paymentType"
               id="cash"
               value="cash"
-              checked={paymentType === 'cash'}
-              onChange={handlePaymentType}
+              checked={props.paymentType === 'cash'}
+              onChange={props.handlePaymentType}
             />
           </div>
 
@@ -104,8 +104,8 @@ const Form = props => {
               name="paymentType"
               id="cashOnDelivery"
               value="cashOnDelivery"
-              checked={paymentType === 'cashOnDelivery'}
-              onChange={handlePaymentType}
+              checked={props.paymentType === 'cashOnDelivery'}
+              onChange={props.handlePaymentType}
             />
           </div>
 
@@ -119,33 +119,37 @@ const Form = props => {
               type="checkbox"
               name="legalTerms"
               id="legalTerms"
-              checked={legalTerms}
-              onChange={handleLegalTerms}
-            />
-          </div>
+              checked={props.legalTerms}
+              onChange={props.handleLegalTerms}
+          />
         </div>
+	<Preview
+				name={props.name}
+				email={props.email}
+				region={props.region}
+				paymentType={props.paymentType}
+				legal={props.checkedRadio}
+			/>
 
-        {/* </Preview> */}
-        <div className="preview">
-          <h2>Tus datos son:</h2>
-          <ul>
-            <li>Nombre: {name}</li>
-            <li>Email: {email}</li>
-            <li>Región: {region}</li>
-            <li>Método de pago: {renderPaymentTypeText()}</li>
-            <li>Has aceptado nuestros términos legales: {legalTerms === true ? 'Sí' : 'No'}</li>
-          </ul>
-        </div>
+			{/* reset */}
+			{/* Este botón debe estar inhabilitado mientras el formulario no sea válido */}
+			<Button
+				type="submit"
+				className="button"
+				handleChangeButton={props.handleValid}
+				disabled={props.handleValid}
+				text="Enviar"
+			/>
+			{/* send */}
 
-        {/* reset */}
-        {/* Este botón debe estar inhabilitado mientras el formulario no sea válido */}
-        <input className="button" type="submit" value="Enviar" disabled={isValidForm() === false} />
-
-        {/* send */}
-        <button className="button reset" onClick={handleResetButton}>
-          Limpiar el formulario
-        </button>
-      </form>
-  
-  ); 
+			<Button
+				className="button reset"
+				handleChangeButton={props.handleResetButton}
+				text="Limpiar el formulario"
+        />
+      </div>
+  </form>
+	);
 };
+
+export default Form;

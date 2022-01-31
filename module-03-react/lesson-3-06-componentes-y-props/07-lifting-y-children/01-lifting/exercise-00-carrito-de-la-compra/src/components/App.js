@@ -1,40 +1,37 @@
+import { useState } from 'react';
+import Form from './Form'
 import '../styles/App.scss';
 
-// Fichero src/components/App.js
-import { useState } from 'react';
 
 const App = () => {
-  // Estados del componente
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [region, setRegion] = useState('España peninsular'); // Iniciamos el componente con la primera opción del select
+  const [region, setRegion] = useState('');
   const [paymentType, setPaymentType] = useState('');
   const [legalTerms, setLegalTerms] = useState(false);
 
   // Eventos
-  const handleName = ev => {
-    setName(ev.target.value);
+  const handleName = value => {
+    setName(value);
   };
 
-  const handleEmail = ev => {
-    setEmail(ev.target.value);
+  const handleEmail = value => {
+    setEmail(value);
   };
 
-  const handleRegion = ev => {
-    setRegion(ev.target.value);
+  const handleRegion = value => {
+    setRegion(value);
   };
 
-  const handlePaymentType = ev => {
-    setPaymentType(ev.target.value);
+  const handlePaymentType = value => {
+    setPaymentType(value);
   };
 
-  const handleLegalTerms = ev => {
-    // Como lo que nos interesa es si está activo o no guardamos el checked
-    setLegalTerms(ev.target.checked);
+  const handleLegalTerms = checked => {
+    setLegalTerms(checked);
   };
 
   const handleResetButton = () => {
-    // Ponemos los mismo valores que hemos usado arriba en los useState
     setName('');
     setEmail('');
     setRegion('España peninsular');
@@ -42,25 +39,11 @@ const App = () => {
     setLegalTerms(false);
   };
 
-  const handleForm = ev => {
-    ev.preventDefault();
-    console.log('Enviando datos al servidor...');
-  };
-
-  // Funciones que nos ayudan a renderizar
-  // const renderPaymentTypeText = () => {
-  //   if (paymentType === 'creditCard') {
-  //     return 'Tarjeta de crédito';
-  //   } else if (paymentType === 'cash') {
-  //     return 'Efectivo';
-  //   } else if (paymentType === 'cashOnDelivery') {
-  //     return 'Contra reembolso';
-  //   }
+  // const handleForm = ev => {
+  //   ev.preventDefault();
   // };
 
   const isValidForm = () => {
-    // El formulario solo es válido cuando los inputs de tipo texto no estén vacíos, cuando se haya marcado una tipo de pago y cuando los términos legales sean true
-    // También podríamos comprobar que el email tiene el formato correcto, pero no queremos complicar este ejemplo
     if (name !== '' && email !== '' && paymentType !== '' && legalTerms === true) {
       return true;
     } else {
@@ -69,43 +52,26 @@ const App = () => {
   };
 
   return (
+    <div>
+      <Form
+              handleForm={handleName}
+              handleForm={handleEmail}
+              handleForm={handleRegion}
+              handleForm={handlePaymentType}
+              handleForm={handleLegalTerms}
+              handleResetButton={handleResetButton}
+              handleFormSubmit={handleFormSubmit}
+              name={name}
+              email={email}
+              region={region}
+              paymentType={paymentType}
+              handleValid={isValidForm() === false}
+              checkedRadio={legalTerms}
+              handleLegal={handleLegalTerms}
   
-  <form>
-    
-          {/* name */}
-
-              onChange={handleName}
- 
-
-          {/* email */}
-              onChange={handleEmail}
-          
-
-          {/* region */}
-              onChange={handleRegion}
-          
-          {/* payment type */}
-  
-              onChange={handlePaymentType}
-    
-
-    
-
-          {/* legal terms */}
-        
-              onChange={handleLegalTerms}
-      
-
-        {/* reset */}
-        {/* Este botón debe estar inhabilitado mientras el formulario no sea válido */}
-        <input className="button" type="submit" value="Enviar" disabled={isValidForm() === false} />
-
-        {/* send */}
-        <button className="button reset" onClick={handleResetButton}>
-          Limpiar el formulario
-        </button>
-    </form>
-  );
+    />
+		</div>
+	);
 };
 
 export default App;
