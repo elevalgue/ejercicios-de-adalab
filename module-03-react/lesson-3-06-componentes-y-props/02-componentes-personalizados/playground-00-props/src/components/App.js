@@ -34,7 +34,7 @@ const App = () => {
           <h1>adalab_digital</h1>
 
           {/* Botón Seguir con la prop text */}
-          <ButtonBlue text="Seguir" />
+          <ButtonBlue text="Iniciar sesión" />
 
           {/* Esta es la sección con el logo y la info de Adalab */}
         </section>
