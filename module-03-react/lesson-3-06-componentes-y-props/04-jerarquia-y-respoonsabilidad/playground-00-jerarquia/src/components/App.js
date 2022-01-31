@@ -1,8 +1,4 @@
 import '../styles/App.scss';
-// Fichero src/componets/App.js (código nuevo)
-
-// Fichero src/components/App.js
-
 import { useState } from 'react';
 import Preview from './Preview';
 
