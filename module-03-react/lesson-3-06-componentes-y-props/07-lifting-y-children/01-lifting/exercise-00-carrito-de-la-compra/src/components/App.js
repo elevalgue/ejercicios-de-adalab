@@ -39,10 +39,6 @@ const App = () => {
     setLegalTerms(false);
   };
 
-  // const handleForm = ev => {
-  //   ev.preventDefault();
-  // };
-
   const isValidForm = () => {
     if (name !== '' && email !== '' && paymentType !== '' && legalTerms === true) {
       return true;
@@ -53,12 +49,12 @@ const App = () => {
 
   return (
     <div>
-      <Form
+      {/* {/* <Form */}
               handleForm={handleName}
               handleForm={handleEmail}
               handleForm={handleRegion}
               handleForm={handlePaymentType}
-              handleForm={handleLegalTerms}
+              handleForm={handleLegalTerms} */}
               handleResetButton={handleResetButton}
               handleFormSubmit={handleFormSubmit}
               name={name}

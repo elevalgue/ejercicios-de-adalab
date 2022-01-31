@@ -1,3 +1,7 @@
+import Preview from './Preview'
+import Button from './Button'
+
+
 const Form = props => {
   const handleForm = ev => {
     ev.preventDefault();
@@ -123,32 +127,30 @@ const Form = props => {
               onChange={props.handleLegalTerms}
           />
         </div>
-	<Preview
-				name={props.name}
-				email={props.email}
-				region={props.region}
-				paymentType={props.paymentType}
-				legal={props.checkedRadio}
-			/>
 
-			{/* reset */}
-			{/* Este botón debe estar inhabilitado mientras el formulario no sea válido */}
-			<Button
-				type="submit"
-				className="button"
-				handleChangeButton={props.handleValid}
-				disabled={props.handleValid}
-				text="Enviar"
-			/>
-			{/* send */}
+        <Preview
+            name={props.name}
+            email={props.email}
+            region={props.region}
+            paymentType={props.paymentType}
+            legal={props.checkedRadio}
+          />
+          <Button
+            type="submit"
+            className="button"
+            handleChangeButton={props.handleValid}
+            disabled={props.handleValid}
+            text="Enviar"
+          />
+          {/* send */}
 
-			<Button
-				className="button reset"
-				handleChangeButton={props.handleResetButton}
-				text="Limpiar el formulario"
-        />
-      </div>
-  </form>
+          <Button
+            className="button reset"
+            handleChangeButton={props.handleResetButton}
+            text="Limpiar el formulario"
+          />
+          </div>
+      </form>
 	);
 };
 
