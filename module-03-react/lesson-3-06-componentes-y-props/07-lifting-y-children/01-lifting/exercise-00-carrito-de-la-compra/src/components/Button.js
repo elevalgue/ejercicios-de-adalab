@@ -1,16 +1,16 @@
 const Button = props => {
-  const handleAllButton = ev => {
+  // const handleAllButton = ev => {
     props.handleChangeButton(); 
     return (
       <button
-        type={props.type}
+        // type={props.type}
         className={props.className}
-        onClick={props.disabled}
+        onClick={props.handleResetButton}
       >
         {props.text}
       </button>
     )
-  }
+  // }
 }
 
 export default Button; 
