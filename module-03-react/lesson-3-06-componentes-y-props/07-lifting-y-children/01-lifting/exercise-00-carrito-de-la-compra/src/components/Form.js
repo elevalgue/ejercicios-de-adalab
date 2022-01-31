@@ -4,6 +4,7 @@ import Button from './Button'
 const Form = props => {
   const handleForm = ev => {
     ev.preventDefault();
+    props.handleFormSubmit(); 
     console.log('Enviando datos al servidor...');
   };
 
@@ -23,7 +24,7 @@ const Form = props => {
               name="name"
               id="name"
               placeholder="María García"
-              value={props.props.name}
+              value={props.name}
               onChange={props.handleName}
             />
           </div>
