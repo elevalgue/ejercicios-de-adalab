@@ -49,23 +49,22 @@ const App = () => {
 
   return (
     <div>
-      {/* {/* <Form */}
-              handleForm={handleName}
-              handleForm={handleEmail}
-              handleForm={handleRegion}
-              handleForm={handlePaymentType}
-              handleForm={handleLegalTerms} */}
-              handleResetButton={handleResetButton}
-              handleFormSubmit={handleFormSubmit}
-              name={name}
-              email={email}
-              region={region}
-              paymentType={paymentType}
-              handleValid={isValidForm() === false}
-              checkedRadio={legalTerms}
-              handleLegal={handleLegalTerms}
-  
-    />
+      <Form
+          // handleForm={handleForm}
+          handleName={handleName}
+          handleEmail={handleEmail}
+          handleRegion={handleRegion}
+          handlePaymentType={handlePaymentType}
+          handleResetButton={handleResetButton}
+          // handleFormSubmit={handleForm}
+          name={name}
+          email={email}
+          region={region}
+          paymentType={paymentType}
+          handleValid={isValidForm() === false}
+          checkedRadio={legalTerms}
+          handleLegal={handleLegalTerms}
+      />
 		</div>
 	);
 };

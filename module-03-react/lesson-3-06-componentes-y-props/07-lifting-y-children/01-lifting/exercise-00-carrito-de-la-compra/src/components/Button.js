@@ -1,5 +1,5 @@
 const Button = props => {
-  const handleChangeButton = ev => {
+  const handleAllButton = ev => {
     props.handleChangeButton(); 
     return (
       <button

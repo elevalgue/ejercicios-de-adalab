@@ -1,7 +1,6 @@
 import Preview from './Preview'
 import Button from './Button'
 
-
 const Form = props => {
   const handleForm = ev => {
     ev.preventDefault();
