@@ -8,11 +8,6 @@ const ModalWindow = (props) => {
       <p>Esto es una ventana modal</p>
       {props.children}
     </section>
-    
-    // <section className="modal-window">
-    //   <p>Esto es una ventana modal</p>
-    //   {props.children}
-    // </section>
   );
 };
 

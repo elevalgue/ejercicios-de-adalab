@@ -1,6 +1,6 @@
 import '../styles/App.scss';
 import ModalWindow from './ModalWindow';
-import Product from './product'; 
+import Product from './Product'; 
 
 const App = () => {
   return (
