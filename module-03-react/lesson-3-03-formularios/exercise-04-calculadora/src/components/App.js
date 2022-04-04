@@ -35,6 +35,12 @@ const App = () => {
     return total;
   };
 
+  const handleReset = () => {
+    setNumberA(0)
+    setNumberB(0)
+    setOperation('sumar')
+  }
+
   const handleSubmit = ev => {
     ev.preventDefault();
   };
@@ -57,7 +63,7 @@ const App = () => {
             <option value="multiplicar">multiplicar</option>
             <option value="dividir">dividir</option>
           </select> 
-          {/* <button onClick={handleOpeartion}>Calcular</button> */} 
+          <button onClick={handleReset}>Resetear</button> 
         </form>
         <p>
           Resultado: {getTotal()}</p>
