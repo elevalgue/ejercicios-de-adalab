@@ -1,4 +1,3 @@
-// Fichero src/components/App.js
 import { useState } from 'react';
 
 const App = () => {

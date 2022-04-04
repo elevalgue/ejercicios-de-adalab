@@ -1,5 +1,5 @@
 import '../styles/App.scss';
-// Fichero src/components/App.js
+
 const App = () => {
   const handleSubmit = ev => {
     // Aquí detenemos el envío del formulario

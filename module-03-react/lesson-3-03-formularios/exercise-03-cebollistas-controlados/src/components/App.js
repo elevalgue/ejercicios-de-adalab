@@ -11,18 +11,18 @@ function App() {
     
   const handleIngredient = (ev) => {
     if (ev.target.id === 'patatas') {
-      setPatatas (ev.target.checked);
+      setPatatas(ev.target.checked);
     } else if (ev.target.id === 'cebolla') {
-      setCebolla (ev.target.checked);
+      setCebolla(ev.target.checked);
     } else if (ev.target.id === 'huevos') {
-      setHuevos (ev.target.checked);
+      setHuevos(ev.target.checked);
     } else if (ev.target.id === 'macarrones') {
-      setMacarrones (ev.target.checked);
+      setMacarrones(ev.target.checked);
     } else if (ev.target.id === 'nueces') {
       setNueces(ev.target.checked);
     } else if (ev.target.id === 'cerveza')
       setCerveza(ev.target.checked);
-    }
+  };
 
   const renderMessage = () => {
       if (!(patatas && cebolla && huevos)) {
@@ -30,7 +30,7 @@ function App() {
         } else {
         return 'Eres una persona concebollista';
       }
-    };
+  };
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
@@ -128,6 +128,6 @@ function App() {
 			</form>
 		</div>
 	);
-}
+};
 
 export default App;

@@ -1,13 +1,14 @@
 import '../styles/App.scss';
 import { useState } from 'react';
 
-function App() {
+const App = () => {
   const [translation, setTranslation] = useState('');
   
   const handleTranslation = ev => {
     const translation = ev.currentTarget.value;
     return setTranslation(translation.replaceAll(/[aeiou]/g, 'i')); 
   };
+
   return (
     <div className="App">
       <h1 className="title">Traductor MIMIMI</h1>
@@ -18,6 +19,6 @@ function App() {
       </form>
     </div>
   );
-}
+};
 
 export default App;

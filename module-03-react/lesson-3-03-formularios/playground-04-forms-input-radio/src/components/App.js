@@ -1,7 +1,5 @@
-import '../styles/App.scss';
-
-// Fichero src/components/App.js
 import { useState } from 'react';
+import '../styles/App.scss';
 
 const App = () => {
   // Creamos la constante de estado size con el valor inicial a string vacío

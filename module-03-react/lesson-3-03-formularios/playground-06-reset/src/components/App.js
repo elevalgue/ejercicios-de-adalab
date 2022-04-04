@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import '../styles/App.scss';
+import { useState } from 'react';
 
 const App = () => {
   const [payment, setPayment] = useState('');
@@ -7,6 +7,10 @@ const App = () => {
   const handlePayment = ev => {
     console.log((ev.target.value));
     setPayment(ev.target.value);
+  };
+
+  const handleResetPayment = ev => {
+    setPayment('');
   };
 
   return (
@@ -20,6 +24,7 @@ const App = () => {
         </select>
       </form>
       <p>Has seleccioando el siguiente método de pago 👉 {payment}</p>
+      <button onClick={handleResetPayment}>Resetea el método de pago</button>
     </div>
   );
 };

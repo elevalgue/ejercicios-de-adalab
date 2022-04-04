@@ -3,13 +3,14 @@ import { useState } from 'react';
 const App = () => {
   const [colour, setColour] = useState('');
 
+  const handleColour = ev => {
+    setColour(ev.target.value);
+  };
+  
   const handleSubmit = ev => {
     ev.preventDefault()
   };
   
-  const handleColour = ev => {
-    setColour(ev.target.value);
-  };
 
   return (
     <div>

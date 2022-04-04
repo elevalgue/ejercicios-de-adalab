@@ -1,7 +1,5 @@
-import '../styles/App.scss';
-
-// Fichero src/components/App.js
 import { useState } from 'react';
+import '../styles/App.scss';
 
 const App = () => {
   // Creamos la constante de estado name con el valor inicial a string vacío
@@ -16,7 +14,7 @@ const App = () => {
 
   const handleNFamilyName = ev => {
     setFamilyName(ev.target.value);
-  }
+  };
 
   return (
     <div>

@@ -1,7 +1,5 @@
-import '../styles/App.scss';
-
-// Fichero src/components/App.js
 import { useState } from 'react';
+import '../styles/App.scss';
 
 const App = () => {
   // Creamos la constante de estado giftWrap con el valor inicial a booleano
@@ -20,7 +18,7 @@ const App = () => {
         <label htmlFor="giftWrap">¿Quieres envolver para regalo tu compra?</label>
 
         {/* Creamos un evento de tipo change en este input que va a ser manejada por handleGiftWrap */}
-        <input type="checkbox" name="gitWrap" id="gitWrap" onChange={handleGiftWrap} />
+        <input type="checkbox" name="giftWrap" id="giftWrap" onChange={handleGiftWrap} />
 
         {/* Usamos la constante giftWrap para pintarla en el HTML */}
         <p>{giftWrap === true ? 'Sí' : 'No'} te lo envolveremos para regalo</p>
