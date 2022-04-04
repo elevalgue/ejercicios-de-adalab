@@ -9,6 +9,7 @@ const App = () => {
 
   // Creamos la función manejadora
   const handleSize = ev => {
+    console.log((ev.target.value));
     // En la que guardamos el valor del input en size con setSize
     setSize(ev.target.value);
   };
