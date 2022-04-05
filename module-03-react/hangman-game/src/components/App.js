@@ -2,7 +2,7 @@ import '../styles/App.scss';
 
 const App = () => {
   return (
-    <div className='page'>
+    <div className='page KGTenThousandReasons'>
       <main className='main'>
         <section>
           <div className='solution'>
