@@ -3,3 +3,12 @@
   src: local('KGTenThousandReasons'),
     url('../fonts/KgTenThousandReasons-R1ll.ttf') format('truetype');
 }
+
+* {
+  font-family: 'KgTenThousandReasons', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  color: white;
+}
