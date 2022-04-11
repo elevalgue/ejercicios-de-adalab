@@ -1,8 +1,6 @@
 import '../../styles/App.scss';
 
 const App = () => {
-  console.log('hello');
-
   const students = [
     { id: '8341', name: 'María' },
     { id: '2676', name: 'Lucía' },
