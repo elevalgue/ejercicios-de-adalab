@@ -13,11 +13,15 @@ const App = () => {
 
   const renderTasks = () => {
     return tasks.map((task, index) => {
-      console.log(task, index);
+      console.log('hola', task.task, index, task.completed);
+
       return (
-        <li key={task.index}>
+        // <li key={task.index} className='task__name'>
+        <li key={task.index} className='task__name'>
           {task.task}
-          <span>Completed: {task.completed}</span>
+          <span className='task__completed'>
+            Completed: {task.completed.toString()}
+          </span>
         </li>
       );
     });
