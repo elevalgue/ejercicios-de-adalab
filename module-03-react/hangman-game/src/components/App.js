@@ -1,8 +1,9 @@
 import '../styles/App.scss';
+import '../fonts/KgTenThousandReasons-R1ll.ttf';
 
 const App = () => {
   return (
-    <div className='page KGTenThousandReasons'>
+    <div className='page'>
       <main className='main'>
         <section>
           <div className='solution'>

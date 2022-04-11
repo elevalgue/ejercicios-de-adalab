@@ -8,6 +8,8 @@
 // @import 'components/loading';
 // @import 'components/restart';
 
+@import '../fonts/KgTenThousandReasons-R1ll.ttf';
+
 // COMMON STYLES
 
 .title {
@@ -15,7 +17,7 @@
   font-size: 1.25rem;
   line-height: 1;
   text-align: center;
-  font-family: 'KGTenThousandReasons';
+  font-family: 'KGTenThousandReasonsR1ll';
 }
 
 // PAGE
@@ -27,7 +29,7 @@
   background-image: url('../images/blackboard.jpg');
   background-size: cover;
   background-position: center center;
-  font-family: 'KGTenThousandReasons';
+  font-family: 'KGTenThousandReasonsR1ll';
 }
 
 // MAIN
