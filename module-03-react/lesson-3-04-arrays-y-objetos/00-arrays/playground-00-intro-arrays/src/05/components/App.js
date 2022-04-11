@@ -7,7 +7,12 @@ const App = () => {
 
   const renderStudents = () => {
     return students.map((student) => {
-      return <li>{student.toUpperCase()}</li>;
+      return (
+        <li>
+          <span className=''>El nombre de la estudiante es:</span>
+          <strong>{student.toUpperCase()}</strong>
+        </li>
+      );
     });
   };
 
