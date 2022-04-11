@@ -16,10 +16,14 @@ const App = () => {
       console.log('hola', task.task, index, task.completed);
 
       return (
-        // <li key={task.index} className='task__name'>
         <li key={task.index} className='task__name'>
           {task.task}
-          <span className='task__completed'>
+          <span
+            className='task__completed'
+            style={{
+              textDecoration: task.completed ? 'line-through' : '',
+            }}
+          >
             Completed: {task.completed.toString()}
           </span>
         </li>
